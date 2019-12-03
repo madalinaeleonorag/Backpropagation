@@ -52,7 +52,7 @@ namespace ConsoleApp1
 
 		static double[,] x = new double[4, 5];
 
-		static int nrInstruire = 3;
+		static int nrInstruire = 1;
 
 		static string myCharLines = "--------------Instruire: ";
 
@@ -82,6 +82,15 @@ namespace ConsoleApp1
 			{
 
 				nrInstruire = nrInstruire + 1;
+
+                if (exemplu == 3)
+                {
+                    exemplu = 0;
+                }
+                else
+                {
+                    exemplu++;
+                }
 
 				Activare();
 
@@ -230,15 +239,15 @@ namespace ConsoleApp1
 
 		{
 
-			Console.WriteLine();
-
+            Console.WriteLine();
 			Console.WriteLine(myCharLines + nrInstruire);
+            Console.WriteLine("Se utilizeaza exemplul " + (exemplu + 1));
+            Console.WriteLine();
 
 
 
 
-
-			Console.WriteLine();
+            Console.WriteLine();
 
 			// Instruirea ponderilor 
 
