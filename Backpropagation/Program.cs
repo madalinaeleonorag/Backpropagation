@@ -1,15 +1,5 @@
 ﻿using System;
 
-using System.Collections.Generic;
-
-using System.Linq;
-
-using System.Text;
-
-using System.Threading.Tasks;
-
-
-
 namespace ConsoleApp1
 
 {
@@ -208,22 +198,17 @@ namespace ConsoleApp1
 
 			}
 
-			if (sum >= Eadmis)
+            Console.WriteLine(myError + sum);
+
+            Console.WriteLine();
+
+            if (sum >= Eadmis)
 			{
-
-				Console.WriteLine(myError + sum);
-
-				Console.WriteLine();
-
 				return true;
 
 			}
 			else
 			{
-
-				Console.WriteLine(myError + sum);
-
-				Console.WriteLine();
 
 				return false;
 
@@ -242,10 +227,6 @@ namespace ConsoleApp1
             Console.WriteLine();
 			Console.WriteLine(myCharLines + nrInstruire);
             Console.WriteLine("Se utilizeaza exemplul " + (exemplu + 1));
-            Console.WriteLine();
-
-
-
 
             Console.WriteLine();
 
@@ -370,6 +351,8 @@ namespace ConsoleApp1
 			Console.WriteLine("Teta 3 = " + θ[3]);
 
 			Console.WriteLine("Teta 4 = " + θ[4]);
+
+
 
 		}
 
